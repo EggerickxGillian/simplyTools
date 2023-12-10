@@ -1,0 +1,46 @@
+.navigation-bar-container{
+  .navigation-bar{
+    max-width: $max-container-size;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop{
+      padding: 20px 0px;
+    }
+    .navigation-bar-brand{
+      a{
+        color: #000;
+      }
+    }
+    .navigation-bar-links{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .theme-switch{
+        .light-icon{
+          display: none;
+        }
+        > div{
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          padding: 5px;
+          transition: $transition;
+          background-color: #fff;
+          cursor: pointer;
+          &:hover{
+            background-color: #E1E4E9;
+          }
+          svg{
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}

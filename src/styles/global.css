@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+.btn.btn-primary {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation-bar-container .navigation-bar {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 1240px) {
+  .navigation-bar-container .navigation-bar {
+    padding: 20px 0px;
+  }
+}
+.navigation-bar-container .navigation-bar .navigation-bar-brand a {
+  color: #000;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-links .theme-switch .light-icon {
+  display: none;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-links .theme-switch > div {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+  transition: transition 0.3s ease-in-out;
+  background-color: #fff;
+  cursor: pointer;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-links .theme-switch > div:hover {
+  background-color: #E1E4E9;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-links .theme-switch > div svg {
+  width: 25px;
+}
+
+.home-hero-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+.home-hero-title p {
+  max-width: 500px;
+  font-size: 1.2rem;
+  margin: 20px auto;
+  color: #5F6367;
+}
+
+.tools-container {
+  max-width: 1240px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+.tools-container .tools-list {
+  display: grid;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .tools-container .tools-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 960px) {
+  .tools-container .tools-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .tools-container .tools-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.tools-container .tools-list .tool-item {
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tools-container .tools-list .tool-item .tool-item-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+}
+.tools-container .tools-list .tool-item .tool-item-icon svg {
+  width: 35px;
+}/*# sourceMappingURL=global.css.map */

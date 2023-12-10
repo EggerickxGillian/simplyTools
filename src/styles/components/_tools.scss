@@ -1,0 +1,39 @@
+.tools-container{
+  max-width: $max-container-size;
+  padding: 0px 10px;
+  margin: 0 auto;
+  .tools-list{
+    display: grid;
+    gap: 20px;
+    @include medium{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include laptop{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include desktop{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .tool-item{
+      border: 1px solid #DADADA;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+      -webkit-box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+      -moz-box-shadow: 4px 3px 5px 0px rgba(235, 235, 235, 0.75);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .tool-item-icon{
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        display: grid;
+        place-items: center;
+        svg{
+          width: 35px;
+        }
+      }
+    }
+  }
+}
